@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CiJcX/TOg3dIYR2yjO5q0J+h/ZwXnvc4Mxgj5NHPR2ArDHuqwv3MQ9MI8zqvuWTcrUz7acEtYBFpjdOhESPHcw==",
+  "success": true,
+  "projectFilePath": "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

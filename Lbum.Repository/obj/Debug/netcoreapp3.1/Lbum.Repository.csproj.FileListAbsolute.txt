@@ -1,0 +1,17 @@
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Repository.deps.json
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Repository.dll
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.csprojAssemblyReference.cache
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.AssemblyInfoInputs.cache
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.AssemblyInfo.cs
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Repository.pdb
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.csproj.CoreCompileInputs.cache
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.dll
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.pdb
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Repository.runtimeconfig.json
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Repository.runtimeconfig.dev.json
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Data.dll
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Utils.dll
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Data.pdb
+D:\Repo\LiquidacionMNR\Lbum.Repository\bin\Debug\netcoreapp3.1\Lbum.Utils.pdb
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.csproj.CopyComplete
+D:\Repo\LiquidacionMNR\Lbum.Repository\obj\Debug\netcoreapp3.1\Lbum.Repository.genruntimeconfig.cache
