@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Usuario
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblUsuario>>> GetTblUsuario()
+        public async Task<ActionResult<IEnumerable<User>>> GetTblUsuario()
         {
             return await _context.TblUsuario.ToListAsync();
         }
 
         // GET: api/Usuario/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblUsuario>> GetTblUsuario(int id)
+        public async Task<ActionResult<User>> GetTblUsuario(int id)
         {
             var tblUsuario = await _context.TblUsuario.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblUsuario(int id, TblUsuario tblUsuario)
+        public async Task<IActionResult> PutTblUsuario(int id, User tblUsuario)
         {
             if (id != tblUsuario.IdUsuario)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblUsuario>> PostTblUsuario(TblUsuario tblUsuario)
+        public async Task<ActionResult<User>> PostTblUsuario(User tblUsuario)
         {
             _context.TblUsuario.Add(tblUsuario);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Usuario/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblUsuario>> DeleteTblUsuario(int id)
+        public async Task<ActionResult<User>> DeleteTblUsuario(int id)
         {
             var tblUsuario = await _context.TblUsuario.FindAsync(id);
             if (tblUsuario == null)

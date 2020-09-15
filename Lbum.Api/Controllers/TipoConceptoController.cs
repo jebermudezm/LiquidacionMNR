@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/TipoConcepto
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblTipoConcepto>>> GetTblTipoConcepto()
+        public async Task<ActionResult<IEnumerable<TypeConcept>>> GetTblTipoConcepto()
         {
             return await _context.TblTipoConcepto.ToListAsync();
         }
 
         // GET: api/TipoConcepto/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblTipoConcepto>> GetTblTipoConcepto(int id)
+        public async Task<ActionResult<TypeConcept>> GetTblTipoConcepto(int id)
         {
             var tblTipoConcepto = await _context.TblTipoConcepto.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblTipoConcepto(int id, TblTipoConcepto tblTipoConcepto)
+        public async Task<IActionResult> PutTblTipoConcepto(int id, TypeConcept tblTipoConcepto)
         {
             if (id != tblTipoConcepto.IdTipoConcepto)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblTipoConcepto>> PostTblTipoConcepto(TblTipoConcepto tblTipoConcepto)
+        public async Task<ActionResult<TypeConcept>> PostTblTipoConcepto(TypeConcept tblTipoConcepto)
         {
             _context.TblTipoConcepto.Add(tblTipoConcepto);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/TipoConcepto/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblTipoConcepto>> DeleteTblTipoConcepto(int id)
+        public async Task<ActionResult<TypeConcept>> DeleteTblTipoConcepto(int id)
         {
             var tblTipoConcepto = await _context.TblTipoConcepto.FindAsync(id);
             if (tblTipoConcepto == null)

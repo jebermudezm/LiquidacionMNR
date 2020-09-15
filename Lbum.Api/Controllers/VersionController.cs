@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Version
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblVersion>>> GetTblVersion()
+        public async Task<ActionResult<IEnumerable<Data.Models.Version>>> GetTblVersion()
         {
             return await _context.TblVersion.ToListAsync();
         }
 
         // GET: api/Version/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblVersion>> GetTblVersion(int id)
+        public async Task<ActionResult<Data.Models.Version>> GetTblVersion(int id)
         {
             var tblVersion = await _context.TblVersion.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblVersion(int id, TblVersion tblVersion)
+        public async Task<IActionResult> PutTblVersion(int id, Data.Models.Version tblVersion)
         {
             if (id != tblVersion.IdVersion)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblVersion>> PostTblVersion(TblVersion tblVersion)
+        public async Task<ActionResult<Data.Models.Version>> PostTblVersion(Data.Models.Version tblVersion)
         {
             _context.TblVersion.Add(tblVersion);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Version/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblVersion>> DeleteTblVersion(int id)
+        public async Task<ActionResult<Data.Models.Version>> DeleteTblVersion(int id)
         {
             var tblVersion = await _context.TblVersion.FindAsync(id);
             if (tblVersion == null)

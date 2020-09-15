@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Frontera
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblFrontera>>> GetTblFrontera()
+        public async Task<ActionResult<IEnumerable<EnergyMeter>>> GetTblFrontera()
         {
             return await _context.TblFrontera.ToListAsync();
         }
 
         // GET: api/Frontera/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblFrontera>> GetTblFrontera(int id)
+        public async Task<ActionResult<EnergyMeter>> GetTblFrontera(int id)
         {
             var tblFrontera = await _context.TblFrontera.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblFrontera(int id, TblFrontera tblFrontera)
+        public async Task<IActionResult> PutTblFrontera(int id, EnergyMeter tblFrontera)
         {
             if (id != tblFrontera.IdFrontera)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblFrontera>> PostTblFrontera(TblFrontera tblFrontera)
+        public async Task<ActionResult<EnergyMeter>> PostTblFrontera(EnergyMeter tblFrontera)
         {
             _context.TblFrontera.Add(tblFrontera);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Frontera/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblFrontera>> DeleteTblFrontera(int id)
+        public async Task<ActionResult<EnergyMeter>> DeleteTblFrontera(int id)
         {
             var tblFrontera = await _context.TblFrontera.FindAsync(id);
             if (tblFrontera == null)

@@ -160,3 +160,10 @@ D:\Repo\LiquidacionMNR\Lbum.Api\bin\Debug\netcoreapp3.1\Lbum.Domain.dll
 D:\Repo\LiquidacionMNR\Lbum.Api\bin\Debug\netcoreapp3.1\Lbum.Repository.dll
 D:\Repo\LiquidacionMNR\Lbum.Api\bin\Debug\netcoreapp3.1\Lbum.Domain.pdb
 D:\Repo\LiquidacionMNR\Lbum.Api\bin\Debug\netcoreapp3.1\Lbum.Repository.pdb
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.csprojAssemblyReference.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.csproj.CoreCompileInputs.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.AssemblyInfoInputs.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.AssemblyInfo.cs
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.dll
+D:\ProyectosGit\LiquidacionMNR\Lbum.Api\obj\Debug\netcoreapp3.1\Lbum.Api.pdb

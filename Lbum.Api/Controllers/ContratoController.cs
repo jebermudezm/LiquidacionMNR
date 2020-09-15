@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Contrato
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblContrato>>> GetTblContrato()
+        public async Task<ActionResult<IEnumerable<Contrat>>> GetTblContrato()
         {
             return await _context.TblContrato.ToListAsync();
         }
 
         // GET: api/Contrato/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblContrato>> GetTblContrato(int id)
+        public async Task<ActionResult<Contrat>> GetTblContrato(int id)
         {
             var tblContrato = await _context.TblContrato.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblContrato(int id, TblContrato tblContrato)
+        public async Task<IActionResult> PutTblContrato(int id, Contrat tblContrato)
         {
             if (id != tblContrato.IdContrato)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblContrato>> PostTblContrato(TblContrato tblContrato)
+        public async Task<ActionResult<Contrat>> PostTblContrato(Contrat tblContrato)
         {
             _context.TblContrato.Add(tblContrato);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Contrato/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblContrato>> DeleteTblContrato(int id)
+        public async Task<ActionResult<Contrat>> DeleteTblContrato(int id)
         {
             var tblContrato = await _context.TblContrato.FindAsync(id);
             if (tblContrato == null)

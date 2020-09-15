@@ -9,7 +9,7 @@ namespace Lbum.Repository.Impl
     /// <summary>
     ///<see cref="IConceptopRepository"/>
     /// </summary>
-    public class ConceptoRepositoryImpl : CommandRepository<TblConcepto>, IConceptoRepository
+    public class ConceptoRepositoryImpl : CommandRepository<Concept>, IConceptoRepository
     {
         /// <summary>
         /// constructor MonedaRepository

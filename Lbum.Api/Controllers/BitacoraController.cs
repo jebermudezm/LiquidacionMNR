@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Bitacora
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblBitacora>>> GetTblBitacora()
+        public async Task<ActionResult<IEnumerable<Binnacle>>> GetTblBitacora()
         {
             return await _context.TblBitacora.ToListAsync();
         }
 
         // GET: api/Bitacora/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblBitacora>> GetTblBitacora(int id)
+        public async Task<ActionResult<Binnacle>> GetTblBitacora(int id)
         {
             var tblBitacora = await _context.TblBitacora.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblBitacora(int id, TblBitacora tblBitacora)
+        public async Task<IActionResult> PutTblBitacora(int id, Binnacle tblBitacora)
         {
             if (id != tblBitacora.IdBitacora)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblBitacora>> PostTblBitacora(TblBitacora tblBitacora)
+        public async Task<ActionResult<Binnacle>> PostTblBitacora(Binnacle tblBitacora)
         {
             _context.TblBitacora.Add(tblBitacora);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Bitacora/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblBitacora>> DeleteTblBitacora(int id)
+        public async Task<ActionResult<Binnacle>> DeleteTblBitacora(int id)
         {
             var tblBitacora = await _context.TblBitacora.FindAsync(id);
             if (tblBitacora == null)

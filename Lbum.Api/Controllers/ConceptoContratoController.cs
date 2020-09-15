@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/ConceptoContrato
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblConceptoContrato>>> GetTblConceptoContrato()
+        public async Task<ActionResult<IEnumerable<ConceptContrat>>> GetTblConceptoContrato()
         {
             return await _context.TblConceptoContrato.ToListAsync();
         }
 
         // GET: api/ConceptoContrato/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblConceptoContrato>> GetTblConceptoContrato(int id)
+        public async Task<ActionResult<ConceptContrat>> GetTblConceptoContrato(int id)
         {
             var tblConceptoContrato = await _context.TblConceptoContrato.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblConceptoContrato(int id, TblConceptoContrato tblConceptoContrato)
+        public async Task<IActionResult> PutTblConceptoContrato(int id, ConceptContrat tblConceptoContrato)
         {
             if (id != tblConceptoContrato.IdConceptoContrato)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblConceptoContrato>> PostTblConceptoContrato(TblConceptoContrato tblConceptoContrato)
+        public async Task<ActionResult<ConceptContrat>> PostTblConceptoContrato(ConceptContrat tblConceptoContrato)
         {
             _context.TblConceptoContrato.Add(tblConceptoContrato);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/ConceptoContrato/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblConceptoContrato>> DeleteTblConceptoContrato(int id)
+        public async Task<ActionResult<ConceptContrat>> DeleteTblConceptoContrato(int id)
         {
             var tblConceptoContrato = await _context.TblConceptoContrato.FindAsync(id);
             if (tblConceptoContrato == null)

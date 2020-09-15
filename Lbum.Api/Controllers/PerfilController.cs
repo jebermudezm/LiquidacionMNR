@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Perfil
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblPerfil>>> GetTblPerfil()
+        public async Task<ActionResult<IEnumerable<Profile>>> GetTblPerfil()
         {
             return await _context.TblPerfil.ToListAsync();
         }
 
         // GET: api/Perfil/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblPerfil>> GetTblPerfil(int id)
+        public async Task<ActionResult<Profile>> GetTblPerfil(int id)
         {
             var tblPerfil = await _context.TblPerfil.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblPerfil(int id, TblPerfil tblPerfil)
+        public async Task<IActionResult> PutTblPerfil(int id, Profile tblPerfil)
         {
             if (id != tblPerfil.IdPerfil)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblPerfil>> PostTblPerfil(TblPerfil tblPerfil)
+        public async Task<ActionResult<Profile>> PostTblPerfil(Profile tblPerfil)
         {
             _context.TblPerfil.Add(tblPerfil);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Perfil/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblPerfil>> DeleteTblPerfil(int id)
+        public async Task<ActionResult<Profile>> DeleteTblPerfil(int id)
         {
             var tblPerfil = await _context.TblPerfil.FindAsync(id);
             if (tblPerfil == null)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ICjnq+LNTgiUF/hijyvTDb2qAwMAduofpI9X6g5LuXuu9uCnmUnBgQhUWnVl9kag9w+/ZqusOKnT7Lsh1z82CQ==",
+  "dgSpecHash": "0HPAoGliBrBNnJQJR1K/+g1ttuvkNTo6puRC/vvomkcNdXS4M+0+di+I1T/gsDHE0R065pXc9WNYSZFbeQwIKw==",
   "success": false,
-  "projectFilePath": "D:\\Repo\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
+  "projectFilePath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\advancedstringbuilder\\0.1.0\\advancedstringbuilder.0.1.0.nupkg.sha512",
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
@@ -219,8 +219,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -228,8 +228,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -237,8 +237,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

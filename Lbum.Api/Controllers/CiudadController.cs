@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Ciudad
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblCiudad>>> GetTblCiudad()
+        public async Task<ActionResult<IEnumerable<City>>> GetTblCiudad()
         {
             return await _context.TblCiudad.ToListAsync();
         }
 
         // GET: api/Ciudad/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblCiudad>> GetTblCiudad(int id)
+        public async Task<ActionResult<City>> GetTblCiudad(int id)
         {
             var tblCiudad = await _context.TblCiudad.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblCiudad(int id, TblCiudad tblCiudad)
+        public async Task<IActionResult> PutTblCiudad(int id, City tblCiudad)
         {
             if (id != tblCiudad.IdCiudad)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblCiudad>> PostTblCiudad(TblCiudad tblCiudad)
+        public async Task<ActionResult<City>> PostTblCiudad(City tblCiudad)
         {
             _context.TblCiudad.Add(tblCiudad);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Ciudad/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblCiudad>> DeleteTblCiudad(int id)
+        public async Task<ActionResult<City>> DeleteTblCiudad(int id)
         {
             var tblCiudad = await _context.TblCiudad.FindAsync(id);
             if (tblCiudad == null)

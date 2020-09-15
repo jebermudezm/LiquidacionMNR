@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/ConceptoFrontera
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblConceptoFrontera>>> GetTblConceptoFrontera()
+        public async Task<ActionResult<IEnumerable<ConceptEnergyMeter>>> GetTblConceptoFrontera()
         {
             return await _context.TblConceptoFrontera.ToListAsync();
         }
 
         // GET: api/ConceptoFrontera/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblConceptoFrontera>> GetTblConceptoFrontera(int id)
+        public async Task<ActionResult<ConceptEnergyMeter>> GetTblConceptoFrontera(int id)
         {
             var tblConceptoFrontera = await _context.TblConceptoFrontera.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblConceptoFrontera(int id, TblConceptoFrontera tblConceptoFrontera)
+        public async Task<IActionResult> PutTblConceptoFrontera(int id, ConceptEnergyMeter tblConceptoFrontera)
         {
             if (id != tblConceptoFrontera.IdConceptoFrontera)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblConceptoFrontera>> PostTblConceptoFrontera(TblConceptoFrontera tblConceptoFrontera)
+        public async Task<ActionResult<ConceptEnergyMeter>> PostTblConceptoFrontera(ConceptEnergyMeter tblConceptoFrontera)
         {
             _context.TblConceptoFrontera.Add(tblConceptoFrontera);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/ConceptoFrontera/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblConceptoFrontera>> DeleteTblConceptoFrontera(int id)
+        public async Task<ActionResult<ConceptEnergyMeter>> DeleteTblConceptoFrontera(int id)
         {
             var tblConceptoFrontera = await _context.TblConceptoFrontera.FindAsync(id);
             if (tblConceptoFrontera == null)

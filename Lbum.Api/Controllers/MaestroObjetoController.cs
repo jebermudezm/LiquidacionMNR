@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/MaestroObjeto
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblMaestroObjeto>>> GetTblMaestroObjeto()
+        public async Task<ActionResult<IEnumerable<MasterObjet>>> GetTblMaestroObjeto()
         {
             return await _context.TblMaestroObjeto.ToListAsync();
         }
 
         // GET: api/MaestroObjeto/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblMaestroObjeto>> GetTblMaestroObjeto(int id)
+        public async Task<ActionResult<MasterObjet>> GetTblMaestroObjeto(int id)
         {
             var tblMaestroObjeto = await _context.TblMaestroObjeto.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblMaestroObjeto(int id, TblMaestroObjeto tblMaestroObjeto)
+        public async Task<IActionResult> PutTblMaestroObjeto(int id, MasterObjet tblMaestroObjeto)
         {
             if (id != tblMaestroObjeto.IdMaestroObjeto)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblMaestroObjeto>> PostTblMaestroObjeto(TblMaestroObjeto tblMaestroObjeto)
+        public async Task<ActionResult<MasterObjet>> PostTblMaestroObjeto(MasterObjet tblMaestroObjeto)
         {
             _context.TblMaestroObjeto.Add(tblMaestroObjeto);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/MaestroObjeto/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblMaestroObjeto>> DeleteTblMaestroObjeto(int id)
+        public async Task<ActionResult<MasterObjet>> DeleteTblMaestroObjeto(int id)
         {
             var tblMaestroObjeto = await _context.TblMaestroObjeto.FindAsync(id);
             if (tblMaestroObjeto == null)

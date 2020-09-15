@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pDF1/2CNYZxfZMwhl5rXsZjG300H+BXUGAX1fhLBi6ow8z3bb7qos9uUhJpGWiSOAo11ygpkwaErjdIxv1cbeA==",
+  "dgSpecHash": "7msPVcEF9C+sZIOuGq7EWaHKozN5/R59sJ7fcl5h+art8FLuMLQGUHwxfAEWM4xePkJDVERTJ5kpCjbRrjp46A==",
   "success": true,
-  "projectFilePath": "D:\\Repo\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj",
+  "projectFilePath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

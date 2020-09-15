@@ -9009,11 +9009,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\LiquidacionMNR\\Lbum.Api\\Lbum.Api.csproj",
+      "projectUniqueName": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Api\\Lbum.Api.csproj",
       "projectName": "Lbum.Api",
-      "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Api\\Lbum.Api.csproj",
+      "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Api\\Lbum.Api.csproj",
       "packagesPath": "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Api\\obj\\",
+      "outputPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9035,11 +9035,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Repo\\LiquidacionMNR\\Lbum.Data\\Lbum.Data.csproj": {
-              "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Data\\Lbum.Data.csproj"
+            "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Data\\Lbum.Data.csproj": {
+              "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Data\\Lbum.Data.csproj"
             },
-            "D:\\Repo\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj": {
-              "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj"
+            "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj": {
+              "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Domain\\Lbum.Domain.csproj"
             }
           }
         }

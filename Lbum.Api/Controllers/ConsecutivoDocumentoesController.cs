@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/TblConsecutivoDocumentoes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblConsecutivoDocumento>>> GetTblConsecutivoDocumento()
+        public async Task<ActionResult<IEnumerable<ConsecutiveDocument>>> GetTblConsecutivoDocumento()
         {
             return await _context.TblConsecutivoDocumento.ToListAsync();
         }
 
         // GET: api/TblConsecutivoDocumentoes/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblConsecutivoDocumento>> GetTblConsecutivoDocumento(int id)
+        public async Task<ActionResult<ConsecutiveDocument>> GetTblConsecutivoDocumento(int id)
         {
             var tblConsecutivoDocumento = await _context.TblConsecutivoDocumento.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblConsecutivoDocumento(int id, TblConsecutivoDocumento tblConsecutivoDocumento)
+        public async Task<IActionResult> PutTblConsecutivoDocumento(int id, ConsecutiveDocument tblConsecutivoDocumento)
         {
             if (id != tblConsecutivoDocumento.IdConsecutivoDocumento)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblConsecutivoDocumento>> PostTblConsecutivoDocumento(TblConsecutivoDocumento tblConsecutivoDocumento)
+        public async Task<ActionResult<ConsecutiveDocument>> PostTblConsecutivoDocumento(ConsecutiveDocument tblConsecutivoDocumento)
         {
             _context.TblConsecutivoDocumento.Add(tblConsecutivoDocumento);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/TblConsecutivoDocumentoes/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblConsecutivoDocumento>> DeleteTblConsecutivoDocumento(int id)
+        public async Task<ActionResult<ConsecutiveDocument>> DeleteTblConsecutivoDocumento(int id)
         {
             var tblConsecutivoDocumento = await _context.TblConsecutivoDocumento.FindAsync(id);
             if (tblConsecutivoDocumento == null)

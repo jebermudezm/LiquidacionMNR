@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/ConceptoMaestroObjeto
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblConceptoMaestroObjeto>>> GetTblConceptoMaestroObjeto()
+        public async Task<ActionResult<IEnumerable<ConceptMasterObjet>>> GetTblConceptoMaestroObjeto()
         {
             return await _context.TblConceptoMaestroObjeto.ToListAsync();
         }
 
         // GET: api/ConceptoMaestroObjeto/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblConceptoMaestroObjeto>> GetTblConceptoMaestroObjeto(int id)
+        public async Task<ActionResult<ConceptMasterObjet>> GetTblConceptoMaestroObjeto(int id)
         {
             var tblConceptoMaestroObjeto = await _context.TblConceptoMaestroObjeto.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblConceptoMaestroObjeto(int id, TblConceptoMaestroObjeto tblConceptoMaestroObjeto)
+        public async Task<IActionResult> PutTblConceptoMaestroObjeto(int id, ConceptMasterObjet tblConceptoMaestroObjeto)
         {
             if (id != tblConceptoMaestroObjeto.IdConceptoMaestroObjeto)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblConceptoMaestroObjeto>> PostTblConceptoMaestroObjeto(TblConceptoMaestroObjeto tblConceptoMaestroObjeto)
+        public async Task<ActionResult<ConceptMasterObjet>> PostTblConceptoMaestroObjeto(ConceptMasterObjet tblConceptoMaestroObjeto)
         {
             _context.TblConceptoMaestroObjeto.Add(tblConceptoMaestroObjeto);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/ConceptoMaestroObjeto/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblConceptoMaestroObjeto>> DeleteTblConceptoMaestroObjeto(int id)
+        public async Task<ActionResult<ConceptMasterObjet>> DeleteTblConceptoMaestroObjeto(int id)
         {
             var tblConceptoMaestroObjeto = await _context.TblConceptoMaestroObjeto.FindAsync(id);
             if (tblConceptoMaestroObjeto == null)

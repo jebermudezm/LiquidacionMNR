@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Empresa
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblEmpresa>>> GetTblEmpresa()
+        public async Task<ActionResult<IEnumerable<Client>>> GetTblEmpresa()
         {
             return await _context.TblEmpresa.ToListAsync();
         }
 
         // GET: api/Empresa/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblEmpresa>> GetTblEmpresa(int id)
+        public async Task<ActionResult<Client>> GetTblEmpresa(int id)
         {
             var tblEmpresa = await _context.TblEmpresa.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblEmpresa(int id, TblEmpresa tblEmpresa)
+        public async Task<IActionResult> PutTblEmpresa(int id, Client tblEmpresa)
         {
             if (id != tblEmpresa.IdEmpresa)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblEmpresa>> PostTblEmpresa(TblEmpresa tblEmpresa)
+        public async Task<ActionResult<Client>> PostTblEmpresa(Client tblEmpresa)
         {
             _context.TblEmpresa.Add(tblEmpresa);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Empresa/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblEmpresa>> DeleteTblEmpresa(int id)
+        public async Task<ActionResult<Client>> DeleteTblEmpresa(int id)
         {
             var tblEmpresa = await _context.TblEmpresa.FindAsync(id);
             if (tblEmpresa == null)

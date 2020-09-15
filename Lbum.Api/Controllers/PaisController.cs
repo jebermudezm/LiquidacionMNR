@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Pais
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblPais>>> GetTblPais()
+        public async Task<ActionResult<IEnumerable<Country>>> GetTblPais()
         {
             return await _context.TblPais.ToListAsync();
         }
 
         // GET: api/Pais/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblPais>> GetTblPais(int id)
+        public async Task<ActionResult<Country>> GetTblPais(int id)
         {
             var tblPais = await _context.TblPais.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblPais(int id, TblPais tblPais)
+        public async Task<IActionResult> PutTblPais(int id, Country tblPais)
         {
             if (id != tblPais.IdPais)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblPais>> PostTblPais(TblPais tblPais)
+        public async Task<ActionResult<Country>> PostTblPais(Country tblPais)
         {
             _context.TblPais.Add(tblPais);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Pais/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblPais>> DeleteTblPais(int id)
+        public async Task<ActionResult<Country>> DeleteTblPais(int id)
         {
             var tblPais = await _context.TblPais.FindAsync(id);
             if (tblPais == null)

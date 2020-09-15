@@ -25,7 +25,7 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Concepto
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblConcepto>>> GetTblConcepto()
+        public async Task<ActionResult<IEnumerable<Concept>>> GetTblConcepto()
         {
             //return await _context.TblConcepto.ToListAsync();
             return await _conceptoDomain.ConsultarConcepto().ToListAsync();
@@ -40,7 +40,7 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Concepto/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblConcepto>> GetTblConcepto(int id)
+        public async Task<ActionResult<Concept>> GetTblConcepto(int id)
         {
             var tblConcepto = await _context.TblConcepto.FindAsync(id);
 
@@ -56,7 +56,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblConcepto(int id, TblConcepto tblConcepto)
+        public async Task<IActionResult> PutTblConcepto(int id, Concept tblConcepto)
         {
             if (id != tblConcepto.IdConcepto)
             {
@@ -88,7 +88,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblConcepto>> PostTblConcepto(TblConcepto tblConcepto)
+        public async Task<ActionResult<Concept>> PostTblConcepto(Concept tblConcepto)
         {
             _context.TblConcepto.Add(tblConcepto);
             await _context.SaveChangesAsync();
@@ -98,7 +98,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Concepto/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblConcepto>> DeleteTblConcepto(int id)
+        public async Task<ActionResult<Concept>> DeleteTblConcepto(int id)
         {
             var tblConcepto = await _context.TblConcepto.FindAsync(id);
             if (tblConcepto == null)

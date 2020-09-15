@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/EncabezadoFactura
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblEncabezadoFactura>>> GetTblEncabezadoFactura()
+        public async Task<ActionResult<IEnumerable<InvoiceHeader>>> GetTblEncabezadoFactura()
         {
             return await _context.TblEncabezadoFactura.ToListAsync();
         }
 
         // GET: api/EncabezadoFactura/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblEncabezadoFactura>> GetTblEncabezadoFactura(int id)
+        public async Task<ActionResult<InvoiceHeader>> GetTblEncabezadoFactura(int id)
         {
             var tblEncabezadoFactura = await _context.TblEncabezadoFactura.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblEncabezadoFactura(int id, TblEncabezadoFactura tblEncabezadoFactura)
+        public async Task<IActionResult> PutTblEncabezadoFactura(int id, InvoiceHeader tblEncabezadoFactura)
         {
             if (id != tblEncabezadoFactura.IdEncabezado)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblEncabezadoFactura>> PostTblEncabezadoFactura(TblEncabezadoFactura tblEncabezadoFactura)
+        public async Task<ActionResult<InvoiceHeader>> PostTblEncabezadoFactura(InvoiceHeader tblEncabezadoFactura)
         {
             _context.TblEncabezadoFactura.Add(tblEncabezadoFactura);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/EncabezadoFactura/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblEncabezadoFactura>> DeleteTblEncabezadoFactura(int id)
+        public async Task<ActionResult<InvoiceHeader>> DeleteTblEncabezadoFactura(int id)
         {
             var tblEncabezadoFactura = await _context.TblEncabezadoFactura.FindAsync(id);
             if (tblEncabezadoFactura == null)

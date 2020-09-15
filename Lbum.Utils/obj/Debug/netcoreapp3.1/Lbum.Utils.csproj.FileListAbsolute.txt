@@ -6,3 +6,12 @@ D:\Repo\LiquidacionMNR\Lbum.Utils\bin\Debug\netcoreapp3.1\Lbum.Utils.pdb
 D:\Repo\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.csproj.CoreCompileInputs.cache
 D:\Repo\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.dll
 D:\Repo\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.pdb
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\bin\Debug\netcoreapp3.1\Lbum.Utils.deps.json
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\bin\Debug\netcoreapp3.1\Lbum.Utils.dll
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\bin\Debug\netcoreapp3.1\Lbum.Utils.pdb
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.csprojAssemblyReference.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.csproj.CoreCompileInputs.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.AssemblyInfoInputs.cache
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.AssemblyInfo.cs
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.dll
+D:\ProyectosGit\LiquidacionMNR\Lbum.Utils\obj\Debug\netcoreapp3.1\Lbum.Utils.pdb

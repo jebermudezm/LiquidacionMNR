@@ -16,7 +16,7 @@ namespace Lbum.Domain.Impl
             _context = context;
             _conceptoRepository = conceptoRepository;
         }
-        public IQueryable<TblConcepto> ConsultarConcepto()
+        public IQueryable<Concept> ConsultarConcepto()
         {
             var conceptos = _conceptoRepository.GetAllQueryable();
             return conceptos;

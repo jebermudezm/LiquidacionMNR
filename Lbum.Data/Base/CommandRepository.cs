@@ -176,8 +176,8 @@
             {
                 string jsonContrato = SerializarEntidadJson(item);
 
-                _unitOfWork.CreateSet<TblAuditoria>().Add(
-                    new TblAuditoria
+                _unitOfWork.CreateSet<Audit>().Add(
+                    new Audit
                     {
                         IdEntidad = Convert.ToInt64(item.GetType().GetProperty("Id").GetValue(item)),
                         Fecha = DateTime.Now,

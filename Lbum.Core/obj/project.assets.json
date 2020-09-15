@@ -9374,11 +9374,11 @@
   "project": {
     "version": "4.3.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
+      "projectUniqueName": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
       "projectName": "Lbum.Core",
-      "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
+      "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
       "packagesPath": "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\obj\\",
+      "outputPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

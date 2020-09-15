@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Lista
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblListas>>> GetTblListas()
+        public async Task<ActionResult<IEnumerable<ListMaster>>> GetTblListas()
         {
             return await _context.TblListas.ToListAsync();
         }
 
         // GET: api/Lista/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblListas>> GetTblListas(int id)
+        public async Task<ActionResult<ListMaster>> GetTblListas(int id)
         {
             var tblListas = await _context.TblListas.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblListas(int id, TblListas tblListas)
+        public async Task<IActionResult> PutTblListas(int id, ListMaster tblListas)
         {
             if (id != tblListas.IdLista)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblListas>> PostTblListas(TblListas tblListas)
+        public async Task<ActionResult<ListMaster>> PostTblListas(ListMaster tblListas)
         {
             _context.TblListas.Add(tblListas);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Lista/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblListas>> DeleteTblListas(int id)
+        public async Task<ActionResult<ListMaster>> DeleteTblListas(int id)
         {
             var tblListas = await _context.TblListas.FindAsync(id);
             if (tblListas == null)

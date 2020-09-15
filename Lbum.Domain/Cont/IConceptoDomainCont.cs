@@ -17,6 +17,6 @@ namespace Lbum.Domain.Cont
         /// </summary>
         /// <param name="curva"></param>
         /// <returns></returns>
-        IQueryable<TblConcepto> ConsultarConcepto();
+        IQueryable<Concept> ConsultarConcepto();
     }
 }

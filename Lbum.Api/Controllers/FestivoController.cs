@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Festivo
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblFestivos>>> GetTblFestivos()
+        public async Task<ActionResult<IEnumerable<Calendar>>> GetTblFestivos()
         {
             return await _context.TblFestivos.ToListAsync();
         }
 
         // GET: api/Festivo/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblFestivos>> GetTblFestivos(int id)
+        public async Task<ActionResult<Calendar>> GetTblFestivos(int id)
         {
             var tblFestivos = await _context.TblFestivos.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblFestivos(int id, TblFestivos tblFestivos)
+        public async Task<IActionResult> PutTblFestivos(int id, Calendar tblFestivos)
         {
             if (id != tblFestivos.IdFestivo)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblFestivos>> PostTblFestivos(TblFestivos tblFestivos)
+        public async Task<ActionResult<Calendar>> PostTblFestivos(Calendar tblFestivos)
         {
             _context.TblFestivos.Add(tblFestivos);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Festivo/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblFestivos>> DeleteTblFestivos(int id)
+        public async Task<ActionResult<Calendar>> DeleteTblFestivos(int id)
         {
             var tblFestivos = await _context.TblFestivos.FindAsync(id);
             if (tblFestivos == null)

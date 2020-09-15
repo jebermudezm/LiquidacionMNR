@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/ResultadoLiquidacion
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblResultadoLiquidacion>>> GetTblResultadoLiquidacion()
+        public async Task<ActionResult<IEnumerable<LiquidationDetail>>> GetTblResultadoLiquidacion()
         {
             return await _context.TblResultadoLiquidacion.ToListAsync();
         }
 
         // GET: api/ResultadoLiquidacion/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblResultadoLiquidacion>> GetTblResultadoLiquidacion(int id)
+        public async Task<ActionResult<LiquidationDetail>> GetTblResultadoLiquidacion(int id)
         {
             var tblResultadoLiquidacion = await _context.TblResultadoLiquidacion.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblResultadoLiquidacion(int id, TblResultadoLiquidacion tblResultadoLiquidacion)
+        public async Task<IActionResult> PutTblResultadoLiquidacion(int id, LiquidationDetail tblResultadoLiquidacion)
         {
             if (id != tblResultadoLiquidacion.IdResultadoLiquidacion)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblResultadoLiquidacion>> PostTblResultadoLiquidacion(TblResultadoLiquidacion tblResultadoLiquidacion)
+        public async Task<ActionResult<LiquidationDetail>> PostTblResultadoLiquidacion(LiquidationDetail tblResultadoLiquidacion)
         {
             _context.TblResultadoLiquidacion.Add(tblResultadoLiquidacion);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/ResultadoLiquidacion/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblResultadoLiquidacion>> DeleteTblResultadoLiquidacion(int id)
+        public async Task<ActionResult<LiquidationDetail>> DeleteTblResultadoLiquidacion(int id)
         {
             var tblResultadoLiquidacion = await _context.TblResultadoLiquidacion.FindAsync(id);
             if (tblResultadoLiquidacion == null)

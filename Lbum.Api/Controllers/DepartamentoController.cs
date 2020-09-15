@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/Departamento
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblDepartamento>>> GetTblDepartamento()
+        public async Task<ActionResult<IEnumerable<Department>>> GetTblDepartamento()
         {
             return await _context.TblDepartamento.ToListAsync();
         }
 
         // GET: api/Departamento/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblDepartamento>> GetTblDepartamento(int id)
+        public async Task<ActionResult<Department>> GetTblDepartamento(int id)
         {
             var tblDepartamento = await _context.TblDepartamento.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblDepartamento(int id, TblDepartamento tblDepartamento)
+        public async Task<IActionResult> PutTblDepartamento(int id, Department tblDepartamento)
         {
             if (id != tblDepartamento.IdDepartamento)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblDepartamento>> PostTblDepartamento(TblDepartamento tblDepartamento)
+        public async Task<ActionResult<Department>> PostTblDepartamento(Department tblDepartamento)
         {
             _context.TblDepartamento.Add(tblDepartamento);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/Departamento/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblDepartamento>> DeleteTblDepartamento(int id)
+        public async Task<ActionResult<Department>> DeleteTblDepartamento(int id)
         {
             var tblDepartamento = await _context.TblDepartamento.FindAsync(id);
             if (tblDepartamento == null)

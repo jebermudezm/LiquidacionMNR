@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z5ig775M9uhdNYhFfVhGK/+h7bH1JUQRp+OgQsRJd+IrqEHIkP3v9hHDgyhD5Y0fFQobX/jOoxUPDAI6A8u+lA==",
+  "dgSpecHash": "JaiO80dDxCibbLbLx1FPCQJeZBK9Au098RKIlBG1yWXnLpATmt8XTXdCFh02PE1h06CKicrKUtHoXpKeoibwiA==",
   "success": true,
-  "projectFilePath": "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
+  "projectFilePath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
     "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

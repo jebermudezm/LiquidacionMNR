@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/DetalleFactura
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblDetalleFactura>>> GetTblDetalleFactura()
+        public async Task<ActionResult<IEnumerable<InvoiceDetail>>> GetTblDetalleFactura()
         {
             return await _context.TblDetalleFactura.ToListAsync();
         }
 
         // GET: api/DetalleFactura/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblDetalleFactura>> GetTblDetalleFactura(int id)
+        public async Task<ActionResult<InvoiceDetail>> GetTblDetalleFactura(int id)
         {
             var tblDetalleFactura = await _context.TblDetalleFactura.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblDetalleFactura(int id, TblDetalleFactura tblDetalleFactura)
+        public async Task<IActionResult> PutTblDetalleFactura(int id, InvoiceDetail tblDetalleFactura)
         {
             if (id != tblDetalleFactura.IdDetalle)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblDetalleFactura>> PostTblDetalleFactura(TblDetalleFactura tblDetalleFactura)
+        public async Task<ActionResult<InvoiceDetail>> PostTblDetalleFactura(InvoiceDetail tblDetalleFactura)
         {
             _context.TblDetalleFactura.Add(tblDetalleFactura);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/DetalleFactura/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblDetalleFactura>> DeleteTblDetalleFactura(int id)
+        public async Task<ActionResult<InvoiceDetail>> DeleteTblDetalleFactura(int id)
         {
             var tblDetalleFactura = await _context.TblDetalleFactura.FindAsync(id);
             if (tblDetalleFactura == null)

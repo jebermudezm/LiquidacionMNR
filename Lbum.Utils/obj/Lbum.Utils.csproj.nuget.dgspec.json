@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj": {}
+    "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj": {}
   },
   "projects": {
-    "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj": {
+    "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj",
+        "projectUniqueName": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj",
         "projectName": "Lbum.Utils",
-        "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj",
+        "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Utils\\Lbum.Utils.csproj",
         "packagesPath": "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\",
-        "outputPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Utils\\obj\\",
+        "outputPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

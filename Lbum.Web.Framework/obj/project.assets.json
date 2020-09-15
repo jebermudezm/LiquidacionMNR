@@ -9800,9 +9800,9 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "BundlerMinifier.Core >= 3.2.447",
-      "D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj",
-      "D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj",
-      "D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj",
+      "D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj",
+      "D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj",
+      "D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj",
       "FluentValidation.AspNetCore >= 8.6.2",
       "Lbum.Core >= 4.3.0",
       "WebMarkupMin.AspNetCore3 >= 2.8.2",
@@ -9817,11 +9817,11 @@
   "project": {
     "version": "4.3.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
+      "projectUniqueName": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
       "projectName": "Lbum.Web.Framework",
-      "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
+      "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Web.Framework\\Lbum.Web.Framework.csproj",
       "packagesPath": "C:\\Users\\joaquin.bermudez\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Web.Framework\\obj\\",
+      "outputPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Web.Framework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9843,17 +9843,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj": {
-              "projectPath": "D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj"
+            "D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj": {
+              "projectPath": "D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj"
             },
-            "D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj": {
-              "projectPath": "D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj"
+            "D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj": {
+              "projectPath": "D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj"
             },
-            "D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj": {
-              "projectPath": "D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj"
+            "D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj": {
+              "projectPath": "D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj"
             },
-            "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj": {
-              "projectPath": "D:\\Repo\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj"
+            "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj": {
+              "projectPath": "D:\\ProyectosGit\\LiquidacionMNR\\Lbum.Core\\Lbum.Core.csproj"
             }
           }
         }
@@ -9910,8 +9910,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Services\\Nop.Services.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Services\\Nop.Services.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -9919,8 +9919,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Data\\Nop.Data.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Data\\Nop.Data.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]
@@ -9928,8 +9928,8 @@
     {
       "code": "NU1104",
       "level": "Error",
-      "message": "Unable to find project 'D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "D:\\Repo\\Libraries\\Nop.Core\\Nop.Core.csproj",
+      "message": "Unable to find project 'D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\ProyectosGit\\Libraries\\Nop.Core\\Nop.Core.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
       ]

@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/ListasDetalle
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblListasDetalle>>> GetTblListasDetalle()
+        public async Task<ActionResult<IEnumerable<ListDetail>>> GetTblListasDetalle()
         {
             return await _context.TblListasDetalle.ToListAsync();
         }
 
         // GET: api/ListasDetalle/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblListasDetalle>> GetTblListasDetalle(int id)
+        public async Task<ActionResult<ListDetail>> GetTblListasDetalle(int id)
         {
             var tblListasDetalle = await _context.TblListasDetalle.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblListasDetalle(int id, TblListasDetalle tblListasDetalle)
+        public async Task<IActionResult> PutTblListasDetalle(int id, ListDetail tblListasDetalle)
         {
             if (id != tblListasDetalle.IdListaDetalle)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblListasDetalle>> PostTblListasDetalle(TblListasDetalle tblListasDetalle)
+        public async Task<ActionResult<ListDetail>> PostTblListasDetalle(ListDetail tblListasDetalle)
         {
             _context.TblListasDetalle.Add(tblListasDetalle);
             await _context.SaveChangesAsync();
@@ -87,7 +87,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/ListasDetalle/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblListasDetalle>> DeleteTblListasDetalle(int id)
+        public async Task<ActionResult<ListDetail>> DeleteTblListasDetalle(int id)
         {
             var tblListasDetalle = await _context.TblListasDetalle.FindAsync(id);
             if (tblListasDetalle == null)

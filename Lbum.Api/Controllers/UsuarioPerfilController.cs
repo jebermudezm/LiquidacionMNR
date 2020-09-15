@@ -22,14 +22,14 @@ namespace Lbum.Api.Controllers
 
         // GET: api/UsuarioPerfil
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TblUsuarioPerfil>>> GetTblUsuarioPerfil()
+        public async Task<ActionResult<IEnumerable<UserProfile>>> GetTblUsuarioPerfil()
         {
             return await _context.TblUsuarioPerfil.ToListAsync();
         }
 
         // GET: api/UsuarioPerfil/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<TblUsuarioPerfil>> GetTblUsuarioPerfil(int id)
+        public async Task<ActionResult<UserProfile>> GetTblUsuarioPerfil(int id)
         {
             var tblUsuarioPerfil = await _context.TblUsuarioPerfil.FindAsync(id);
 
@@ -45,7 +45,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTblUsuarioPerfil(int id, TblUsuarioPerfil tblUsuarioPerfil)
+        public async Task<IActionResult> PutTblUsuarioPerfil(int id, UserProfile tblUsuarioPerfil)
         {
             if (id != tblUsuarioPerfil.IdUsuario)
             {
@@ -77,7 +77,7 @@ namespace Lbum.Api.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<TblUsuarioPerfil>> PostTblUsuarioPerfil(TblUsuarioPerfil tblUsuarioPerfil)
+        public async Task<ActionResult<UserProfile>> PostTblUsuarioPerfil(UserProfile tblUsuarioPerfil)
         {
             _context.TblUsuarioPerfil.Add(tblUsuarioPerfil);
             try
@@ -101,7 +101,7 @@ namespace Lbum.Api.Controllers
 
         // DELETE: api/UsuarioPerfil/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<TblUsuarioPerfil>> DeleteTblUsuarioPerfil(int id)
+        public async Task<ActionResult<UserProfile>> DeleteTblUsuarioPerfil(int id)
         {
             var tblUsuarioPerfil = await _context.TblUsuarioPerfil.FindAsync(id);
             if (tblUsuarioPerfil == null)

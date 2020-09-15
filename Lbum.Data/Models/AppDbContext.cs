@@ -15,34 +15,34 @@ namespace Lbum.Data.Models
         {
         }
 
-        public virtual DbSet<TblBitacora> TblBitacora { get; set; }
-        public virtual DbSet<TblCiudad> TblCiudad { get; set; }
-        public virtual DbSet<TblConcepto> TblConcepto { get; set; }
-        public virtual DbSet<TblConceptoContrato> TblConceptoContrato { get; set; }
-        public virtual DbSet<TblConceptoFrontera> TblConceptoFrontera { get; set; }
-        public virtual DbSet<TblConceptoMaestroObjeto> TblConceptoMaestroObjeto { get; set; }
-        public virtual DbSet<TblConsecutivoDocumento> TblConsecutivoDocumento { get; set; }
-        public virtual DbSet<TblContrato> TblContrato { get; set; }
-        public virtual DbSet<TblContratoFrontera> TblContratoFrontera { get; set; }
-        public virtual DbSet<TblDepartamento> TblDepartamento { get; set; }
-        public virtual DbSet<TblDetalleFactura> TblDetalleFactura { get; set; }
-        public virtual DbSet<TblEmpresa> TblEmpresa { get; set; }
-        public virtual DbSet<TblEncabezadoFactura> TblEncabezadoFactura { get; set; }
-        public virtual DbSet<TblFestivos> TblFestivos { get; set; }
-        public virtual DbSet<TblFrontera> TblFrontera { get; set; }
-        public virtual DbSet<TblLiquidacion> TblLiquidacion { get; set; }
-        public virtual DbSet<TblListas> TblListas { get; set; }
-        public virtual DbSet<TblListasDetalle> TblListasDetalle { get; set; }
-        public virtual DbSet<TblMaestroObjeto> TblMaestroObjeto { get; set; }
-        public virtual DbSet<TblPais> TblPais { get; set; }
-        public virtual DbSet<TblParametros> TblParametros { get; set; }
-        public virtual DbSet<TblPerfil> TblPerfil { get; set; }
-        public virtual DbSet<TblReporte> TblReporte { get; set; }
-        public virtual DbSet<TblResultadoLiquidacion> TblResultadoLiquidacion { get; set; }
-        public virtual DbSet<TblTipoConcepto> TblTipoConcepto { get; set; }
-        public virtual DbSet<TblUsuario> TblUsuario { get; set; }
-        public virtual DbSet<TblUsuarioPerfil> TblUsuarioPerfil { get; set; }
-        public virtual DbSet<TblVersion> TblVersion { get; set; }
+        public virtual DbSet<Binnacle> TblBitacora { get; set; }
+        public virtual DbSet<City> TblCiudad { get; set; }
+        public virtual DbSet<Concept> TblConcepto { get; set; }
+        public virtual DbSet<ConceptContrat> TblConceptoContrato { get; set; }
+        public virtual DbSet<ConceptEnergyMeter> TblConceptoFrontera { get; set; }
+        public virtual DbSet<ConceptMasterObjet> TblConceptoMaestroObjeto { get; set; }
+        public virtual DbSet<ConsecutiveDocument> TblConsecutivoDocumento { get; set; }
+        public virtual DbSet<Contrat> TblContrato { get; set; }
+        public virtual DbSet<ContratEnergyMeter> TblContratoFrontera { get; set; }
+        public virtual DbSet<Department> TblDepartamento { get; set; }
+        public virtual DbSet<InvoiceDetail> TblDetalleFactura { get; set; }
+        public virtual DbSet<Client> TblEmpresa { get; set; }
+        public virtual DbSet<InvoiceHeader> TblEncabezadoFactura { get; set; }
+        public virtual DbSet<Calendar> TblFestivos { get; set; }
+        public virtual DbSet<EnergyMeter> TblFrontera { get; set; }
+        public virtual DbSet<LiquidactionMaster> TblLiquidacion { get; set; }
+        public virtual DbSet<ListMaster> TblListas { get; set; }
+        public virtual DbSet<ListDetail> TblListasDetalle { get; set; }
+        public virtual DbSet<MasterObjet> TblMaestroObjeto { get; set; }
+        public virtual DbSet<Country> TblPais { get; set; }
+        public virtual DbSet<Parameters> TblParametros { get; set; }
+        public virtual DbSet<Profile> TblPerfil { get; set; }
+        public virtual DbSet<Report> TblReporte { get; set; }
+        public virtual DbSet<LiquidationDetail> TblResultadoLiquidacion { get; set; }
+        public virtual DbSet<TypeConcept> TblTipoConcepto { get; set; }
+        public virtual DbSet<User> TblUsuario { get; set; }
+        public virtual DbSet<UserProfile> TblUsuarioPerfil { get; set; }
+        public virtual DbSet<Version> TblVersion { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -55,7 +55,7 @@ namespace Lbum.Data.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TblBitacora>(entity =>
+            modelBuilder.Entity<Binnacle>(entity =>
             {
                 entity.HasKey(e => e.IdBitacora);
 
@@ -88,7 +88,7 @@ namespace Lbum.Data.Models
                 entity.Property(e => e.Version).HasComment("Versión del proceso que se está ejecutando");
             });
 
-            modelBuilder.Entity<TblCiudad>(entity =>
+            modelBuilder.Entity<City>(entity =>
             {
                 entity.HasKey(e => e.IdCiudad);
 
@@ -131,7 +131,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblCiudad_tblDepartamento");
             });
 
-            modelBuilder.Entity<TblConcepto>(entity =>
+            modelBuilder.Entity<Concept>(entity =>
             {
                 entity.HasKey(e => e.IdConcepto)
                     .HasName("PK_tblConceptos");
@@ -173,7 +173,7 @@ namespace Lbum.Data.Models
                     .HasComment("Usuario de la aplicación que creó el concepto");
             });
 
-            modelBuilder.Entity<TblConceptoContrato>(entity =>
+            modelBuilder.Entity<ConceptContrat>(entity =>
             {
                 entity.HasKey(e => e.IdConceptoContrato);
 
@@ -198,7 +198,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblConceptoContrato_tblContrato");
             });
 
-            modelBuilder.Entity<TblConceptoFrontera>(entity =>
+            modelBuilder.Entity<ConceptEnergyMeter>(entity =>
             {
                 entity.HasKey(e => e.IdConceptoFrontera);
 
@@ -246,7 +246,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblConceptoFrontera_tblVersion");
             });
 
-            modelBuilder.Entity<TblConceptoMaestroObjeto>(entity =>
+            modelBuilder.Entity<ConceptMasterObjet>(entity =>
             {
                 entity.HasKey(e => e.IdConceptoMaestroObjeto);
 
@@ -292,7 +292,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblConceptoMaestroObjeto_tblVersion");
             });
 
-            modelBuilder.Entity<TblConsecutivoDocumento>(entity =>
+            modelBuilder.Entity<ConsecutiveDocument>(entity =>
             {
                 entity.HasKey(e => e.IdConsecutivoDocumento);
 
@@ -312,7 +312,7 @@ namespace Lbum.Data.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TblContrato>(entity =>
+            modelBuilder.Entity<Contrat>(entity =>
             {
                 entity.HasKey(e => e.IdContrato);
 
@@ -362,7 +362,7 @@ namespace Lbum.Data.Models
                     .HasComment("Fecha de creación del contrato");
             });
 
-            modelBuilder.Entity<TblContratoFrontera>(entity =>
+            modelBuilder.Entity<ContratEnergyMeter>(entity =>
             {
                 entity.HasKey(e => e.IdContratoFrontera);
 
@@ -407,7 +407,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblContratoFrontera_tblFrontera");
             });
 
-            modelBuilder.Entity<TblDepartamento>(entity =>
+            modelBuilder.Entity<Department>(entity =>
             {
                 entity.HasKey(e => e.IdDepartamento);
 
@@ -436,7 +436,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblDepartamento_tblPais");
             });
 
-            modelBuilder.Entity<TblDetalleFactura>(entity =>
+            modelBuilder.Entity<InvoiceDetail>(entity =>
             {
                 entity.HasKey(e => e.IdDetalle);
 
@@ -459,7 +459,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblDetalleFactura_tblEncabezadoFactura");
             });
 
-            modelBuilder.Entity<TblEmpresa>(entity =>
+            modelBuilder.Entity<Client>(entity =>
             {
                 entity.HasKey(e => e.IdEmpresa);
 
@@ -507,7 +507,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblEmpresa_tblCiudad");
             });
 
-            modelBuilder.Entity<TblEncabezadoFactura>(entity =>
+            modelBuilder.Entity<InvoiceHeader>(entity =>
             {
                 entity.HasKey(e => e.IdEncabezado);
 
@@ -807,7 +807,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblEncabezadoFactura_tblCiudad");
             });
 
-            modelBuilder.Entity<TblFestivos>(entity =>
+            modelBuilder.Entity<Calendar>(entity =>
             {
                 entity.HasKey(e => e.IdFestivo);
 
@@ -827,7 +827,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblFestivos_tblPais");
             });
 
-            modelBuilder.Entity<TblFrontera>(entity =>
+            modelBuilder.Entity<EnergyMeter>(entity =>
             {
                 entity.HasKey(e => e.IdFrontera);
 
@@ -948,7 +948,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblFrontera_tblCiudad");
             });
 
-            modelBuilder.Entity<TblLiquidacion>(entity =>
+            modelBuilder.Entity<LiquidactionMaster>(entity =>
             {
                 entity.HasKey(e => e.IdLiquidacion);
 
@@ -1001,7 +1001,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblLiquidacion_tblVersion");
             });
 
-            modelBuilder.Entity<TblListas>(entity =>
+            modelBuilder.Entity<ListMaster>(entity =>
             {
                 entity.HasKey(e => e.IdLista)
                     .HasName("PK_tblTablasSUI");
@@ -1023,7 +1023,7 @@ namespace Lbum.Data.Models
                     .HasComment("Nombre de la Tabla del SUI");
             });
 
-            modelBuilder.Entity<TblListasDetalle>(entity =>
+            modelBuilder.Entity<ListDetail>(entity =>
             {
                 entity.HasKey(e => e.IdListaDetalle)
                     .HasName("PK_tblRegistroTablasSUI");
@@ -1046,7 +1046,7 @@ namespace Lbum.Data.Models
                 entity.Property(e => e.IdLista).HasComment("Campo para identificar los grupos de registros o tablas del SUI.");
             });
 
-            modelBuilder.Entity<TblMaestroObjeto>(entity =>
+            modelBuilder.Entity<MasterObjet>(entity =>
             {
                 entity.HasKey(e => e.IdMaestroObjeto);
 
@@ -1105,7 +1105,7 @@ namespace Lbum.Data.Models
                     .HasComment("Usuario de la aplicación que creó el objeto");
             });
 
-            modelBuilder.Entity<TblPais>(entity =>
+            modelBuilder.Entity<Country>(entity =>
             {
                 entity.HasKey(e => e.IdPais);
 
@@ -1128,7 +1128,7 @@ namespace Lbum.Data.Models
                     .HasComment("Nombre del país");
             });
 
-            modelBuilder.Entity<TblParametros>(entity =>
+            modelBuilder.Entity<Parameters>(entity =>
             {
                 entity.HasKey(e => e.IdParametro);
 
@@ -1163,7 +1163,7 @@ namespace Lbum.Data.Models
                     .HasComment("Valor del parametro");
             });
 
-            modelBuilder.Entity<TblPerfil>(entity =>
+            modelBuilder.Entity<Profile>(entity =>
             {
                 entity.HasKey(e => e.IdPerfil);
 
@@ -1175,7 +1175,7 @@ namespace Lbum.Data.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TblReporte>(entity =>
+            modelBuilder.Entity<Report>(entity =>
             {
                 entity.HasKey(e => e.IdReporte);
 
@@ -1221,7 +1221,7 @@ namespace Lbum.Data.Models
                     .HasComment("Títulos de los encabezados del reporte, estos deben ir separados por punto y coma(;)");
             });
 
-            modelBuilder.Entity<TblResultadoLiquidacion>(entity =>
+            modelBuilder.Entity<LiquidationDetail>(entity =>
             {
                 entity.HasKey(e => e.IdResultadoLiquidacion);
 
@@ -1304,7 +1304,7 @@ namespace Lbum.Data.Models
                     .HasConstraintName("FK_tblResultadoLiquidacion_tblVersion");
             });
 
-            modelBuilder.Entity<TblTipoConcepto>(entity =>
+            modelBuilder.Entity<TypeConcept>(entity =>
             {
                 entity.HasKey(e => e.IdTipoConcepto);
 
@@ -1321,7 +1321,7 @@ namespace Lbum.Data.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TblUsuario>(entity =>
+            modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario);
 
@@ -1352,7 +1352,7 @@ namespace Lbum.Data.Models
                     .HasComment("Usuario para la autenticación de la aplicación");
             });
 
-            modelBuilder.Entity<TblUsuarioPerfil>(entity =>
+            modelBuilder.Entity<UserProfile>(entity =>
             {
                 entity.HasKey(e => new { e.IdUsuario, e.IdPerfil });
 
@@ -1366,7 +1366,7 @@ namespace Lbum.Data.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<TblVersion>(entity =>
+            modelBuilder.Entity<Version>(entity =>
             {
                 entity.HasKey(e => e.IdVersion);
 
